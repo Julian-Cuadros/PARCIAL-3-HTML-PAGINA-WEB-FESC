@@ -1,0 +1,387 @@
+/*FUENTE*/
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Barlow:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Aclonica';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #dde1e9;
+}
+
+/*SECCION MENU*/
+.contenedor-header {
+    width: 100%;
+    position: fixed;
+    border-bottom: 1px solid rgba(187, 166, 166, 0.171);
+    background-color: rgba(187, 166, 166, 0.171);
+    z-index: 99;
+    padding: 0 20px;
+}
+
+.contenedor-header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.txtNegro {
+    color: #000;
+}
+
+.txtRojo {
+    color: #da1c1c;
+}
+
+.contenedor-header header nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #da1c1c;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.contenedor-header header nav a:hover {
+    color: #000;
+}
+
+.contenedor-header header .redes a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 8px;
+}
+
+.contenedor-header header .redes a:hover {
+    color: #da1c1c;
+}
+
+.nav-responsive {
+    font-size: 25px;
+}
+
+/*SECCION INICIO*/
+.inicio {
+    height: 100vh;
+    background: url(/fondos/peso\ muerto.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    color: #fff;
+}
+
+.inicio .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.inicio .info {
+    width: fit-content;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.inicio .info h2 {
+    font-size: 4rem;
+    letter-spacing: 3px;
+}
+
+.inicio .info {
+    margin: 20px;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.inicio .info .btn-mas {
+    width: 60px;
+    margin: auto;
+    height: 60px;
+    border: 2px solid #da1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #da1c1c;
+    margin-top: 40px;
+    text-decoration: none;
+}
+
+.opciones {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.opciones .opcion {
+    border-top: 2px solid #da1c1c;
+    padding: 7px;
+    color: #000;
+    margin: 0 20px;
+}
+
+/*SECCION NOSOTROS*/
+.fitness {
+    max-width: 1100px;
+    margin: auto;
+    height: 100vh;
+    background-color: #dde1e9;
+    padding: 100px 20px;
+}
+
+.fitness .fila {
+    display: flex;
+    align-items: center;
+}
+
+.fitness .fila .col {
+    width: 50%;
+}
+
+.fitness .fila .col img {
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.fitness .fila .col .contenedor-titulo {
+    display: flex;
+    align-items: center;
+}
+
+.fitness .fila .col .contenedor-titulo .numero {
+    color: #da1c1c;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+}
+
+.fitness .fila .col .contenedor-titulo .info {
+    margin-left: 30px;
+}
+
+.fitness .fila .col .contenedor-titulo .info .frase {
+    color: #da1c1c;
+}
+
+.fitness .fila .col .contenedor-titulo .info h2 {
+    font-size: 3rem;
+}
+
+.fitness .fila .col p {
+    margin-bottom: 10px;
+    line-height: 28px;
+}
+
+.fitness .fila .col .p-especial {
+    font-weight: bold;
+}
+
+.fitness hr {
+    margin-bottom: 30px;
+}
+
+.fitness .fila-fitness {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fitness .fila-fitness .frase {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.fitness .fila-fitness h2 {
+    font-size: 2.5rem;
+}
+
+.fitness .fila-fitness button {
+    background-color: #da1c1c;
+    border: none;
+    color: #000;
+    padding: 15px 35px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*SECCION CROSSFIT*/
+.crossfit {
+    color: #fff;
+    position: relative;
+}
+
+.crossfit .contenido-crossfit {
+    background: url(/fondos/crosffiyt.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin: auto;
+    padding: 20px;
+}
+
+.crossfit .contenido-crossfit .fila {
+    display: flex;
+    flex-direction: column;
+    content: right;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px;
+}
+
+.crossfit .contenido-crossfit .fila .col {
+    width: 50%;
+}
+
+.crossfit .contenido-crossfit .fila .col img {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+.crossfit .fila .col .contenedor-titulo {
+    display: flex;
+    align-items: center;
+}
+
+.crossfit .fila .col .contenedor-titulo .numero {
+    color: #da1c1c;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+}
+
+.crossfit .fila .col .contenedor-titulo .info {
+    margin-left: 30px;
+}
+
+.crossfit .fila .col .contenedor-titulo .info .frase {
+    color: #da1c1c;
+}
+
+.crossfit .fila .col .contenedor-titulo .info h2 {
+    font-size: 3rem;
+}
+
+.crossfit .fila .col p {
+    margin-bottom: 10px;
+    line-height: 28px;
+}
+
+.crossfit .fila .col .p-especial {
+    font-weight: bold;
+}
+
+.crossfit .info-crossfit {
+    max-width: 800px;
+    margin: auto;
+}
+
+.crossfit .info-crossfit table {
+    text-align: center;
+    background: #fff;
+    color: #1f283e;
+    border-collapse: collapse;
+    position: relative;
+    bottom: 100px;
+}
+
+.crossfit .info-crossfit table td {
+    padding: 30px;
+    border: 1px solid #dde1e9;
+}
+
+.crossfit .info-crossfit table td i {
+    color: #da1c1c;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.crossfit .info-crossfit h3 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.crossfit .info-crossfit p {
+    line-height: 30px;
+}
+
+/*SECCION ENTRENADORES*/
+.entrenadores {
+    max-width: 1100px;
+    margin: auto;
+    padding-top: 100px;
+    background-color: #dde1e9;
+}
+
+.entrenadores .contenedor-titulo{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.entrenadores .contenedor-titulo .numero{
+    color: #da1c1c;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+}
+
+.entrenadores .contenedor-titulo .info{
+    margin-left: 30px;
+}
+
+.entrenadores .contenedor-titulo .info .frase{
+    color: #da1c1c;
+}
+
+.entrenadores.contenedor-titulo .info h2{
+    font-size: 3rem
+}
+
+.entrenadores .fila{
+    margin: 50px 0;
+    display: flex; 
+    justify-content: space-around;
+}
+
+.entrenadores .fila .col{
+    width: 25%;
+}
+
+.entrenadores .fila .col img{
+    max-height: 300px;
+    display: block;
+    margin: auto;   
+}
+
+.entrenadores .fila .info{
+    border: 5px solid  #1f283e;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+    background: linear-gradient(#da1c1c, #9a0e23);
+    color: #fff;
+}
